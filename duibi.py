@@ -38,7 +38,8 @@ class CustomDataset(Dataset):
 # x_test, y_test, test_length,test_sequence = PadEncode(test_sequence_data, y_test, max_length)
 
 
-model_name = r"D:\bisai\PreProtac\chenmBert"
+# model_name = r"D:\bisai\PreProtac\chenmBert"
+model_name = r"Port5"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 # model = BertModel.from_pretrained(model_name)
 train_inputs = tokenizer(train_sequence_data, max_length=50, return_tensors="pt", padding=True, truncation=True)
