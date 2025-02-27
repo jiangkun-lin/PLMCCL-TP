@@ -15,7 +15,7 @@ The framework of the PLMCCL-TP method for MFTP prediction is described as follow
 
 
 ## Training and test PLMCCL-TP model
-python main.py
+python PLMCCL-TP.py
 
 ## Installation 
 Address for obtaining protein language models:https://huggingface.co/Rostlab/prot_t5_xl_uniref50
