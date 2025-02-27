@@ -11,7 +11,7 @@ In this paper, we developed a model named PLMCCL - TP for predicting multifuncti
 
 
 The framework of the PLMCCL-TP method for MFTP prediction is described as follows:
-![draft](./figures/PLMCCL-TP.jpg)
+![draft](PLMCCL-TP.jpg)
 
 
 ## Training and test PLMCCL-TP model
