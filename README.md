@@ -27,7 +27,7 @@ The framework of the PLMCCL-TP method for MFTP prediction is described as follow
 ## Training and test PLMCCL-TP model
 **1.** Clone this repository by `git clone git@github.com:jiangkun-lin/PLMCCL-TP.git`.
 
-**2.** Install the protein language models. The [ESMFold](https://github.com/facebookresearch/esm) and [ProtTrans](https://github.com/agemagician/ProtTrans) can be installed, followed by their official tutorials. The pre-trained ProtT5-XL-UniRef50 model can be downloaded [here](https://zenodo.org/record/4644188) .   
+**2.** Install the protein language models. https://huggingface.co/Rostlab/prot_bert.   
 
 **3.** Install the requirements
 
