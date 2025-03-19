@@ -105,12 +105,12 @@ def main(num, data):
     x_train, y_train, train_length,train_sequence = PadEncode(train_sequence_data, y_train, max_length)
     x_test, y_test, test_length,test_sequence = PadEncode(test_sequence_data, y_test, max_length)
 
-    model_name = "Port5"
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    model_name = "port"
+    tokenizer = BertTokenizer.from_pretrained(model_name)
     model = BertModel.from_pretrained(model_name)
 
     # 加载模型的状态字典
-    model.load_state_dict(torch.load('duibi_model.pth'),False)
+    model.load_state_dict(torch.load('contrastive_model_2.pth'),False)
 
     train_inputs = tokenizer(train_sequence, max_length=50, return_tensors="pt", padding=True, truncation=True)['input_ids']
     test_inputs = tokenizer(test_sequence, max_length=50, return_tensors="pt", padding=True, truncation=True)
