@@ -39,8 +39,8 @@ class CustomDataset(Dataset):
 
 
 # model_name = r"D:\bisai\PreProtac\chenmBert"
-model_name = r"Port5"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
+model_name = r"port"
+tokenizer = BertTokenizer.from_pretrained(model_name)
 # model = BertModel.from_pretrained(model_name)
 train_inputs = tokenizer(train_sequence_data, max_length=50, return_tensors="pt", padding=True, truncation=True)
 tt = train_inputs['input_ids']
@@ -106,4 +106,4 @@ for epoch in range(100):
         total_loss.backward()
         optimizer.step()
         print("1")
-torch.save(model.state_dict(), 'duibi_model.pth')
+torch.save(model.state_dict(), 'contrastive_model_2.pth')
