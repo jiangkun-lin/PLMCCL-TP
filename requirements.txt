@@ -1,0 +1,11 @@
+matplotlib==3.8.4
+numpy==2.2.3
+pandas==1.5.3
+scikit_learn==1.6.1
+scipy==1.15.2
+seaborn==0.13.2
+torch==2.1.1+cu118
+torchinfo==1.8.0
+transformers==4.42.4
+umap==0.1.1
+umap_learn==0.5.6
